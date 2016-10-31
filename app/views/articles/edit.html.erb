@@ -2,5 +2,12 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<a href="/articles">Show</a> <!-- FUJKY !!! -->
+
+<a href="<%= article_path(@article) %>">Show</a> <!-- OK :-/ -->
+
+<%= link_to 'Show', article_path(@article) %> | <!-- ZEN ;-) -->
+<%= link_to 'Show', article_path(@article.id) %> | <!-- Skoro ZEN :-/ -->
+<%= link_to 'Show', @article %> <!-- ZEN ;-) -->
+|
+<%= link_to 'Back', articles_path %> <!-- ZEN ;-) -->
