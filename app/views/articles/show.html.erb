@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>Category:</strong>
+  <%= @article.category.name if @article.category.present? %>
+</p>
+
+<p>
   <strong>Is published:</strong>
   <%= @article.is_published %>
 </p>
