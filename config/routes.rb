@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'dashboard/index'
+  get 'admin' => 'dashboard#index'
 
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
