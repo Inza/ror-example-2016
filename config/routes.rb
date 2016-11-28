@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #get 'admin' => 'dashboard#index'
   scope 'admin' do
-    get '/' => 'dashboard#index'
+    get '/' => 'dashboard#index', as: 'dashboard'
   end
 
   resources :articles
