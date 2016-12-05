@@ -16,6 +16,17 @@
 </p>
 
 <p>
+  <strong>Tags:</strong>
+  <% if @article.tags.any? %>
+    <ul>
+      <% @article.tags.each do |tag| %>
+        <li><%= tag.name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</p>
+
+<p>
   <strong>Is published:</strong>
   <%= @article.is_published %>
 </p>
