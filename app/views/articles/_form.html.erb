@@ -25,6 +25,10 @@
     </div>
 
     <div class="field">
+      <%= f.association :tags, as: :check_boxes %>
+    </div>
+
+    <div class="field">
       <%= f.label :is_published %><br>
       <%= f.check_box :is_published %>
     </div>
