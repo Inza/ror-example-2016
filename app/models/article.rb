@@ -19,6 +19,7 @@
 class Article < ActiveRecord::Base
   belongs_to :category
   has_many :tag_assignments
+  has_many :tags, through: :tag_assignments
 
   validates :title, presence: true
   validates :category, presence: true
