@@ -32,3 +32,7 @@
 
 <%= link_to 'New Article', new_article_path %>
 <%= link_to 'Dashboard', dashboard_path %>
+
+<div data-target="true">
+  <%= link_to 'Load data with AJAX', "#", data: { ajax: true, path: ajax_articles_path } %>
+</div>
